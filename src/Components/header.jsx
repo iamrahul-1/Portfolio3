@@ -16,7 +16,7 @@ const Header = () => {
   return (
     <header className={"flex justify-center items-center"}>
       <div
-        className={`fixed top-2 z-10 w-[90%] rounded-3xl transition-all duration-300 ${
+        className={`fixed top-0 z-10 w-[90%] rounded-3xl transition-all duration-300 ${
           isScrolled
             ? "bg-gray-800 bg-opacity-40 backdrop-blur-lg shadow-md"
             : "bg-transparent"
@@ -30,7 +30,7 @@ const Header = () => {
             <a href="/" className="text-white hover:text-[#F2E5BF]">
               Home
             </a>
-            <a href="/" className="text-white hover:text-[#F2E5BF]">
+            <a href="#projects" className="text-white hover:text-[#F2E5BF]">
               Projects
             </a>
             <a href="/about" className="text-white hover:text-[#F2E5BF]">
