@@ -24,9 +24,9 @@ const Header = () => {
       >
         <div className="flex-col md:flex-row container mx-auto px-4 py-4 flex justify-between items-center">
           <div>
-            <img className="h-11 md:h-20 pb-2 w-auto" src={logo} />
+            <img className="h-14 md:h-20 pb-2 w-auto" src={logo} />
           </div>
-          <nav className="md:text-lg md:space-x-10 text-xs space-x-6">
+          <nav className="md:text-lg md:space-x-10 text-sm space-x-6">
             <a href="/" className="text-white hover:text-[#F2E5BF]">
               Home
             </a>
