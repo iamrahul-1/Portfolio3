@@ -7,15 +7,15 @@ export default function About() {
       <div className="mt-[7rem] h-auto md:mt-28 text-4xl md:text-6xl p-2 text-gray-300 flex justify-center items-center lg:mb-9">
         About
       </div>
-      <div className="flex flex-col justify-center mx-auto w-[90%] md:w-[75%] leading-[10rem]">
-        <h1 className="text-3xl sm:text-lg md:text-xl lg:text-3xl font-bold  font-poppins text-teal-400">
+      <div className="flex flex-col justify-center mx-auto w-[90%] md:w-[75%]">
+        <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold font-poppins text-teal-400">
           Hi, I&apos;m Rahul Chauhan.
         </h1>
 
-        <h2 className="text-md sm:text-lg md:text-xl text-left text-teal-200 font-poppins tracking-wide pb-3">
+        <h2 className="text-xs sm:text-lg md:text-xl lg:text-2xl text-left text-teal-200 font-poppins tracking-wide pb-3">
           Full-Stack Web Developer | Freelancer
         </h2>
-        <p className="text-base h-screen sm:text-lg md:text-xl text-gray-400 font-inter">
+        <p className="text-base h-auto pb-16 sm:text-lg md:text-xl text-gray-400 font-inter">
           I&apos;m a passionate Full-Stack Web Developer based in Ahmedabad,
           India. Currently in my final semester at Indira Gandhi National
           University, I&apos;m focused on both frontend and backend development,
