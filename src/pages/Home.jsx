@@ -5,11 +5,11 @@ export default function Home() {
       id="home"
     >
       <div className="max-w-xs sm:max-w-lg md:max-w-2xl lg:max-w-3xl mx-auto space-y-4 sm:space-y-5 md:space-y-6">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white font-playfair animate-fade-in fredericka-the-great-regular">
+        <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white font-playfair animate-fade-in fredericka-the-great-regular">
           Hi, I&apos;m Rahul Chauhan.
         </h1>
 
-        <h2 className="text-xl sm:text-2xl md:text-3xl text-teal-200 font-poppins tracking-wide">
+        <h2 className="text-lg sm:text-2xl md:text-3xl text-teal-200 font-poppins tracking-wide">
           FullStack Web Developer.
         </h2>
 
