@@ -1,15 +1,20 @@
-import FirstPage from "./Components/firstpage";
-import Header from "./Components/header.jsx";
-import Projects from "./Components/projects.jsx";
+import Home from "./pages/home.jsx";
+import Projects from "./pages/Projects.jsx";
+
+import Navbar from "./Components/Navbar.jsx";
+import About from "./pages/About.jsx";
+import Contact from "./pages/Contact.jsx";
 
 function App() {
   return (
     <div>
+      <Navbar />
       <div>
-        <FirstPage />
+        <Home />
+        <Projects />
+        <About />
+        <Contact />
       </div>
-      <Header />
-      <Projects />
     </div>
   );
 }

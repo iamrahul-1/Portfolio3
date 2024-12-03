@@ -7,6 +7,9 @@
   line-height: 1.5;
   font-weight: 400;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 .fredericka-the-great-regular {
   font-family: "Fredericka the Great", serif;
@@ -25,13 +28,27 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+/* Custom Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
