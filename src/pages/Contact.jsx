@@ -3,7 +3,13 @@ import { useForm } from "@formspree/react";
 export default function Contact() {
   const [state, handleSubmit] = useForm("mnnqleoa");
   if (state.succeeded) {
-    return <p>Thanks for joining!</p>;
+    return (
+      <div className="h-screen fredericka-the-great-regular bg-gradient-to-br from-[#092635] to-[#0C0C0C] flex flex-col justify-center items-center">
+        <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-5xl font-bold font-poppins text-teal-400">
+          Thanks for Contacting!
+        </h1>
+      </div>
+    );
   }
 
   return (
