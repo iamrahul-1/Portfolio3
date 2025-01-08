@@ -14,10 +14,10 @@ export default function Contact() {
 
   return (
     <div
-      className="h-screen fredericka-the-great-regular bg-gradient-to-br from-[#092635] to-[#0C0C0C] flex flex-col"
+      className="h-screen  bg-gradient-to-br from-[#092635] to-[#0C0C0C] flex flex-col"
       id="contact"
     >
-      <div className="mt-[7rem] h-auto md:mt-28 text-4xl md:text-6xl p-2 text-white flex justify-center items-center">
+      <div className="mt-[7rem] fredericka-the-great-regular h-auto md:mt-28 text-4xl md:text-6xl p-2 text-white flex justify-center items-center">
         Contact
       </div>
 
@@ -32,7 +32,7 @@ export default function Contact() {
               <input
                 className="appearance-none block w-full bg-gray-800 text-white border border-gray-700 rounded py-3 px-4 leading-tight focus:outline-none focus:border-blue-500"
                 type="text"
-                name="name"
+                name="firstname"
                 placeholder="First Name"
                 autoComplete="off"
                 required
@@ -42,7 +42,7 @@ export default function Contact() {
               <input
                 className="appearance-none block w-full bg-gray-800 text-white border border-gray-700 rounded py-3 px-4 leading-tight focus:outline-none focus:border-blue-500"
                 type="text"
-                name="name"
+                name="lastname"
                 placeholder="Last Name"
                 autoComplete="off"
                 required
