@@ -1,4 +1,3 @@
-import { colors } from "../constants/colors";
 import { useState } from "react";
 import { useForm } from "@formspree/react";
 
@@ -16,7 +15,8 @@ export default function Contact() {
           <div className="backdrop-blur-sm bg-[#16404D]/10 p-6 sm:p-8 md:p-10 rounded-xl shadow-lg">
             <div className="text-center space-y-6">
               <p className="text-[#EDCA95] text-lg">
-                Your message has been sent successfully. I'll get back to you soon!
+                Your message has been sent successfully. I'll get back to you
+                soon!
               </p>
               <button
                 onClick={() => window.location.reload()}
