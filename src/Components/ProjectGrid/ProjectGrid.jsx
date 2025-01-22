@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 import img1 from "../../assets/gradient.png";
 import img2 from "../../assets/sb.png";
 import img3 from "../../assets/robo.png";
@@ -72,59 +73,65 @@ const GithubIcon = () => (
   </svg>
 );
 
-const ProjectCard = ({ project }) => (
-  <div className="group relative bg-[#16404D] rounded-xl overflow-hidden backdrop-blur-sm border-2 border-[#DDA853]/40 transition-all duration-500 hover:border-[#DDA853] hover:shadow-xl hover:shadow-[#DDA853]/20">
-    <div className="relative aspect-video overflow-hidden">
-      <img
-        src={project.image}
-        alt={project.title}
-        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-      />
-      <div className="absolute inset-0 bg-[#16404D]/30 group-hover:bg-[#16404D]/20 transition-all duration-500" />
-    </div>
+const ProjectCard = ({ project }) => {
+  ProjectCard.propTypes = {
+    project: PropTypes.object.isRequired,
+  };
 
-    <div className="p-6">
-      <h3 className="text-xl font-bold text-[#DDA853] mb-2 group-hover:text-[#E5B974] transition-colors">
-        {project.title}
-      </h3>
-      <p className="text-white text-sm mb-4 line-clamp-3">
-        {project.description}
-      </p>
+  return (
+    <div className="group relative bg-[#16404D] rounded-xl overflow-hidden backdrop-blur-sm border-2 border-[#DDA853]/40 transition-all duration-500 hover:border-[#DDA853] hover:shadow-xl hover:shadow-[#DDA853]/20">
+      <div className="relative aspect-video overflow-hidden">
+        <img
+          src={project.image}
+          alt={project.title}
+          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+        />
+        <div className="absolute inset-0 bg-[#16404D]/30 group-hover:bg-[#16404D]/20 transition-all duration-500" />
+      </div>
 
-      <div className="flex flex-wrap gap-2 mb-4">
-        {project.technologies.map((tech) => (
-          <span
-            key={tech}
-            className="text-xs px-3 py-1 rounded-full bg-[#DDA853]/20 text-[#DDA853] border border-[#DDA853]/40 font-medium"
+      <div className="p-6">
+        <h3 className="text-xl font-bold text-[#DDA853] mb-2 group-hover:text-[#E5B974] transition-colors">
+          {project.title}
+        </h3>
+        <p className="text-white text-sm mb-4 line-clamp-3">
+          {project.description}
+        </p>
+
+        <div className="flex flex-wrap gap-2 mb-4">
+          {project.technologies.map((tech) => (
+            <span
+              key={tech}
+              className="text-xs px-3 py-1 rounded-full bg-[#DDA853]/20 text-[#DDA853] border border-[#DDA853]/40 font-medium"
+            >
+              {tech}
+            </span>
+          ))}
+        </div>
+
+        <div className="flex gap-4 mt-auto pt-4 border-t border-[#DDA853]/40">
+          <a
+            href={project.liveLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-sm text-[#DDA853] hover:text-[#E5B974] transition-colors group"
           >
-            {tech}
-          </span>
-        ))}
-      </div>
-
-      <div className="flex gap-4 mt-auto pt-4 border-t border-[#DDA853]/40">
-        <a
-          href={project.liveLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-2 text-sm text-[#DDA853] hover:text-[#E5B974] transition-colors group"
-        >
-          <ExternalLinkIcon />
-          <span className="hidden sm:inline">Live Demo</span>
-        </a>
-        <a
-          href={project.githubLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-2 text-sm text-[#DDA853] hover:text-[#E5B974] transition-colors group ml-auto"
-        >
-          <GithubIcon />
-          <span className="hidden sm:inline">Source Code</span>
-        </a>
+            <ExternalLinkIcon />
+            <span className="hidden sm:inline">Live Demo</span>
+          </a>
+          <a
+            href={project.githubLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-sm text-[#DDA853] hover:text-[#E5B974] transition-colors group ml-auto"
+          >
+            <GithubIcon />
+            <span className="hidden sm:inline">Source Code</span>
+          </a>
+        </div>
       </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default function ProjectGrid() {
   const [selectedCategory, setSelectedCategory] = useState("All");
