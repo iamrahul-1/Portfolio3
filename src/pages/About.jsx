@@ -1,49 +1,63 @@
 export default function About() {
   return (
-    <div
-      className="h-auto fredericka-the-great-regular  bg-gradient-to-br from-[#092635] to-[#0C0C0C] flex flex-col"
-      id="about"
-    >
-      <div className="mt-[7rem] h-auto md:mt-28 text-4xl md:text-6xl p-2 text-gray-300 flex justify-center items-center lg:mb-9">
-        About
-      </div>
-      <div className="flex flex-col justify-center mx-auto w-[90%] md:w-[75%]">
-        <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold font-poppins text-teal-400">
-          Hi, I&apos;m Rahul Chauhan.
+    <div className="min-h-screen w-full bg-gradient-to-br from-[#16404D] to-[#0E2A33] flex flex-col items-center justify-center">
+      <div className="w-full max-w-[280px] sm:max-w-lg md:max-w-2xl lg:max-w-3xl mx-auto">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl text-center mb-6 sm:mb-8 md:mb-12 text-[#DDA853] fredericka-the-great-regular drop-shadow-lg">
+          About Me
         </h1>
 
-        <h2 className="text-xs sm:text-lg md:text-xl lg:text-2xl text-left text-teal-200 font-poppins tracking-wide pb-3">
-          Full-Stack Web Developer | Freelancer
-        </h2>
-        <p className="text-base h-auto pb-16 sm:text-lg md:text-xl text-gray-400 font-inter">
-          I&apos;m a passionate Full-Stack Web Developer based in Ahmedabad,
-          India. Currently in my final semester at Indira Gandhi National
-          University, I&apos;m focused on both frontend and backend development,
-          with hands-on experience in creating dynamic, user-friendly web
-          applications. <br />
-          <br />I recently completed a 1-month internship in web development at
-          Unified Mentor, where I gained practical knowledge of technologies
-          like React JS, JavaScript, Tailwind CSS, Chakra UI, Bootstrap, HTML,
-          CSS, Redux Toolkit, and Firebase. During my internship, I worked on
-          developing and refining web applications, learning how to optimize
-          both performance and user experience.
-          <br />
-          <br /> In addition to my internship, I have had the opportunity to
-          freelance, where I apply my full-stack development skills to build
-          responsive, scalable web applications for various clients. My
-          responsibilities included designing frontend architectures,
-          integrating features like chatbots, and ensuring that the websites
-          were responsive and user-friendly. Notable Projects: Pexel Perfect:
-          Developed a fully responsive web application optimized for flawless
-          performance across all devices. Smart brain & Mushroom essence:
-          Contributed to impactful projects during my internship, focusing on
-          responsive design and functionality. With a strong eye for detail,
-          excellent problem-solving skills, and a passion for continuous
-          learning, I&apos;m excited about tackling new challenges and
-          delivering high-quality digital solutions. Whether it&apos;s a
-          freelance project or a full-time opportunity, I&apos;m eager to bring
-          creative ideas and technical expertise to your team.
-        </p>
+        <div className="space-y-4 sm:space-y-6 text-[#EDCA95] backdrop-blur-sm bg-[#16404D]/10 p-6 rounded-xl">
+          <h2 className="text-xl sm:text-2xl md:text-3xl text-[#DDA853] font-poppins drop-shadow-md">
+            Hi, I&apos;m Rahul Chauhan
+          </h2>
+
+          <h3 className="text-lg sm:text-xl text-[#E5B974] font-poppins">
+            Full-Stack Web Developer | Freelancer
+          </h3>
+
+          <div className="space-y-3 sm:space-y-4 text-sm sm:text-base">
+            <p className="bg-[#16404D]/20 p-4 rounded-lg">
+              I&apos;m a passionate Full-Stack Web Developer based in Ahmedabad,
+              India. Currently in my final semester at Indira Gandhi Delhi
+              Technical University, I specialize in creating dynamic and
+              responsive web applications.
+            </p>
+
+            <p className="text-[#DDA853] font-semibold">
+              My expertise includes:
+            </p>
+
+            <ul className="list-disc list-inside space-y-1 sm:space-y-2 ml-2 sm:ml-4 bg-[#16404D]/20 p-4 rounded-lg">
+              <li>Frontend Development with React.js and Next.js</li>
+              <li>Backend Development with Node.js and Express</li>
+              <li>Database Management with MongoDB and PostgreSQL</li>
+              <li>UI/UX Design with Tailwind CSS and Material-UI</li>
+              <li>Version Control with Git and GitHub</li>
+            </ul>
+
+            <p className="bg-[#16404D]/20 p-4 rounded-lg">
+              I&apos;m always eager to learn new technologies and take on
+              challenging projects. My goal is to create web applications that
+              not only look great but also provide an exceptional user
+              experience.
+            </p>
+          </div>
+
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-4">
+            <a
+              href="/contact"
+              className="w-full sm:w-auto text-center px-6 py-3 bg-[#DDA853] text-[#16404D] rounded-lg font-semibold hover:bg-[#E5B974] transition-all duration-300 transform hover:scale-105 shadow-lg"
+            >
+              Contact Me
+            </a>
+            <a
+              href="/projects"
+              className="w-full sm:w-auto text-center px-6 py-3 border-2 border-[#DDA853] text-[#DDA853] rounded-lg font-semibold hover:bg-[#DDA853]/10 transition-all duration-300 transform hover:scale-105 shadow-lg"
+            >
+              View Projects
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );
