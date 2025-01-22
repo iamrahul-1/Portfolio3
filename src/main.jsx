@@ -1,6 +1,11 @@
 import { createRoot } from "react-dom/client";
 import "./index.css";
-import { AppWrapper } from "./components/AppWrapper";
+import { BrowserRouter } from "react-router-dom";
+import App from "./App.jsx";
 
 const root = createRoot(document.getElementById("root"));
-root.render(<AppWrapper />);
+root.render(
+  <BrowserRouter future={{ v7_startTransition: true }}>
+    <App />
+  </BrowserRouter>
+);
